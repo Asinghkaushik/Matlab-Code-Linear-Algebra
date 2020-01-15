@@ -21,7 +21,7 @@ for index = 1:N
     Eigen_vec_index = [-A_lamb_reduced(1:(N-1),N);1];
     Eigen_vec_index_normed = Eigen_vec_index/norm(Eigen_vec_index);
     P(:,index)=Eigen_vec_index_normed;
-   % R(:,index)=Eigen_vec_index;
+    R(:,index)=Eigen_vec_index;
     end
 end
 end
